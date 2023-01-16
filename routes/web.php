@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('comics');
-});
+    //logica
+    $comics = config('comics');
+
+    return view('comics', compact('comics'));
+})->name('homepage');
+
+Route::get('/comic/{index}', function($index){
+
+    $comics = config('comics');
+
+    $comic = $comics[$index];
+
+    return view('show', compact('comic'));
+})->name('show');

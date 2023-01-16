@@ -1,18 +1,18 @@
 .item {
     font-size: 0.625rem;
-    color: #fff;
+    color: var(--first-color);
     padding: 0 0.3125rem;
 }
 .menu-item {
     text-decoration: none;
     font-size: 0.75rem;
     text-align: center;
-    color: #000;
+    color: var(--second-color);
     padding: 1.25rem 0;
     margin: 0 1.25rem;
 
     &--active {
-        color: #0d6efd;
-        border-bottom: 0.1875rem solid #0d6efd;
+        color: var(--third-color);
+        border-bottom: 0.1875rem solid var(--third-color);
     }
 }

@@ -2,17 +2,18 @@
     <div class="text-bg-primary">
         <div class="container">
             <ul class="d-flex list-unstyled justify-content-end">
-                <li class="item"> DC POWER VISA </li>
-                <li class="item"> ADDITIONAL DC SITE <i class="fa-solid fa-sort-down"></i></li>
+                <li class="px-5 item"> DC POWER VISA </li>
+                <li class="px-2 item"> ADDITIONAL DC SITE <i class="fa-solid fa-sort-down"></i></li>
             </ul>
         </div>
     </div>
 
     <div class="container">
 
-        <nav class="d-flex justify-content-between align-items-center">
-
-            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" class="img-fluid" alt="Logo DC">
+        <nav class="d-flex justify-content-between align-items-center py-3">
+            <a href="{{route('homepage')}}">
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" class="img-fluid" alt="Logo DC">
+            </a>
 
             <ul class="d-flex list-unstyled">
                 <li><a class="menu-item" href="#"><strong>CHARACTERS</strong></a></li>
